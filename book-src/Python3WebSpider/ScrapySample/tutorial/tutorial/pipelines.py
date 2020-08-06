@@ -32,7 +32,7 @@ class MongoPipeline(object):
         self.mongo_uri=mongo_uri
         self.mongo_db=mongo_db
 
-    @classmethod
+    @classmethod # 一种依赖注入的方式
     def from_crawler(cls,crawler):
         return cls(
             mongo_uri=crawler.settings.get('MONGO_URI'),

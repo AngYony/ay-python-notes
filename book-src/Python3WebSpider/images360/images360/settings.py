@@ -66,8 +66,8 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'images360.pipelines.ImagePipeline': 300,
-   'images360.pipelines.MongoPipeline': 301,
-   'images360.pipelines.MysqlPipeline': 302,
+   # 'images360.pipelines.MongoPipeline': 301,
+   # 'images360.pipelines.MysqlPipeline': 302,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
